@@ -29,34 +29,3 @@ export default {
   methods: {}
 };
 </script>
-<style lang="scss" scoped>
-.app-container {
-  .tip {
-    padding: 8px 16px;
-    background-color: #ecf8ff;
-    border-radius: 4px;
-    border-left: 5px solid #50bfff;
-    margin: 20px 0;
-  }
-  .warning {
-    padding: 8px 16px;
-    background-color: #fff6f7;
-    border-radius: 4px;
-    border-left: 5px solid #fe6c6f;
-    margin: 20px 0;
-    code {
-      background-color: hsla(0, 0%, 100%, 0.7);
-      color: #445368;
-    }
-  }
-  p {
-    font-size: 14px;
-    color: #5e6d82;
-    line-height: 1.5em;
-  }
-  a {
-    color: #50bfff;
-    text-decoration: #50bfff;
-  }
-}
-</style>

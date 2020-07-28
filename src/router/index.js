@@ -207,6 +207,26 @@ export const constantRoutes = [
       }
     ]
   },
+  {
+    path: '/pack',
+    component: Layout,
+    meta: { title: '工程化', icon: 'link' },
+    children: [
+      {
+        path: 'webpack',
+        component:() => import('@/views/pack/index'),
+        name:'Webpack',
+        meta: { title: 'Webpack基础', icon: 'link' }
+      },
+      {
+        path: 'webpack原理',
+        component:() => import('@/views/pack/webpack-theory'),
+        name:'Webpack-Theory',
+        meta: { title: 'Webpack原理', icon: 'link' }
+      }
+    ]
+  },
+  
 
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
