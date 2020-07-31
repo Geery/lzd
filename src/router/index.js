@@ -226,7 +226,19 @@ export const constantRoutes = [
       }
     ]
   },
-  
+  {
+    path: '/internet',
+    component: Layout,
+    meta: { title: '网络', icon: 'link' },
+    children: [
+      {
+        path: 'webpack',
+        component:() => import('@/views/internet/index'),
+        name:'Internet',
+        meta: { title: '网络基础', icon: 'link' }
+      }
+    ]
+  },
 
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
