@@ -239,6 +239,19 @@ export const constantRoutes = [
       }
     ]
   },
+  {
+    path: '/vue',
+    component: Layout,
+    meta: { title: 'Vue', icon: 'link' },
+    children: [
+      {
+        path: 'index',
+        component:() => import('@/views/vue/index'),
+        name:'Internet',
+        meta: { title: 'Vue组件化', icon: 'link' }
+      }
+    ]
+  },
 
   // 404 page must be placed at the end !!!
   { path: '*', redirect: '/404', hidden: true }
