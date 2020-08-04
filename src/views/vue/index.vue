@@ -158,7 +158,7 @@
         </pre>
       </div>
       <div class="block">
-        <h3>作用域插槽 v-bind /v-slot:default="slotProps" / {{slotProps.foo}}</h3>
+        <h3>作用域插槽 v-bind /v-slot:default="slotProps" / {slotProps.foo}</h3>
         <div class="tip">
           <p>将内容分发到⼦组件指定位置</p>
         </div>

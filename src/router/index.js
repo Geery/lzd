@@ -249,6 +249,18 @@ export const constantRoutes = [
         component:() => import('@/views/vue/index'),
         name:'Internet',
         meta: { title: 'Vue组件化', icon: 'link' }
+      },
+      {
+        path: 'vue-router',
+        component:() => import('@/views/vue/vue-router'),
+        name:'VueRouter',
+        meta: { title: 'vue-router源码', icon: 'link' }
+      },
+      {
+        path: 'vuex',
+        component:() => import('@/views/vue/vuex'),
+        name:'Vuex',
+        meta: { title: 'vuex源码', icon: 'link' }
       }
     ]
   },

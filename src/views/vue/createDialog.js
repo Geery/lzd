@@ -36,9 +36,8 @@ function createOther(component, props) {
   //     }
   //   })
   const Profile = Vue.extend(component)
-  const vm = new Profile(props).$mount()
+  const vm = new Profile({propsData:props}).$mount()
   document.body.appendChild(vm.$el)
-  const comp = vm.$children[0];
   comp.remove = () => {
     document.body.removeChild(vm.$el)
     vm.$destroy()
