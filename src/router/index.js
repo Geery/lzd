@@ -232,11 +232,16 @@ export const constantRoutes = [
     meta: { title: '网络', icon: 'link' },
     children: [
       {
-        path: 'webpack',
+        path: 'index',
         component:() => import('@/views/internet/index'),
         name:'Internet',
         meta: { title: '网络基础', icon: 'link' }
-      }
+      },{
+        path: 'cpu',
+        component:() => import('@/views/internet/jsNet'),
+        name:'CPU',
+        meta: { title: 'JS引擎的运行机制', icon: 'link' }
+      },
     ]
   },
   {
