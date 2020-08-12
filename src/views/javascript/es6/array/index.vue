@@ -36,11 +36,25 @@
 </template>
 
 <script>
+import DlPromise from '../promise'
 export default {
   data() {
     return {};
   },
-  created() {},
+  created() {
+    let dpm =new DlPromise((resolve,reject)=>{
+     resolve('3')
+    })
+     console.log(dpm)
+    // dpm.then(res=>{
+    //   console.log(res)
+    // })
+
+    // let pm =new Promise((resolve,reject)=>{
+    //   resolve('3')
+    // })
+    // console.log(pm)
+  },
   methods: {}
 };
 </script>
