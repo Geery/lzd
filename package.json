@@ -15,7 +15,7 @@
     "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml"
   },
   "dependencies": {
-    "axios": "0.18.1",
+    "axios": "1.6.0",
     "chokidar": "^3.4.1",
     "element-ui": "2.13.0",
     "highlight.js": "^10.1.1",
